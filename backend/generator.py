@@ -19,7 +19,7 @@ def generate_flashcards(text):
             continue
 
 
-        if len(s.split()) >= 5 and 'is' in s:
+        if len(s.split()) >= 3 and 'is' in s:
             parts = s.split('is', 1)
             question = f"What is {parts[0].strip()}?"
             answer = parts[1].strip()
